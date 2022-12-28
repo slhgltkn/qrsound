@@ -14,13 +14,14 @@ class _anaSayfaState extends State<anaSayfa> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.grey[900],
       body: Padding(
         padding: EdgeInsets.fromLTRB(size.width * 0.1, 0, size.width * 0.1, 0),
         child: Column(
           children: [
-            SizedBox(height: size.height * 0.35),
+            Spacer(flex: 1),
             Butonlar(size),
+            Spacer(flex: 1),
           ],
         ),
       ),
